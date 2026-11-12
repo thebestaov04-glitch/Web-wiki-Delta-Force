@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#26392f"/><stop offset="1" stop-color="#080c0a"/></linearGradient><pattern id="p" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#c4d4c8" stroke-opacity=".08"/></pattern></defs>
+  <rect width="1200" height="630" fill="url(#g)"/><rect width="1200" height="630" fill="url(#p)"/>
+  <path d="m0 431 120-110 104 87 139-185 145 186 145-132 152 152 139-205 119 143 137-71v334H0Z" fill="#0c130f"/>
+  <path d="m0 510 214-72 133 46 167-75 147 81 158-69 170 77 211-83v215H0Z" fill="#080c0a"/>
+  <path d="M72 72h46M72 72v46M1128 72h-46M1128 72v46M72 558h46M72 558v-46M1128 558h-46M1128 558v-46" fill="none" stroke="#00e9a3" stroke-width="3"/>
+  <text x="112" y="181" fill="#00e9a3" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="7">FAN-MADE  /  MINI WIKI TIẾNG VIỆT</text>
+  <text x="108" y="312" fill="#f1f4f2" font-family="Arial,sans-serif" font-size="72" font-weight="700" letter-spacing="2">DELTA FORCE</text>
+  <text x="112" y="366" fill="#c0cdc4" font-family="Arial,sans-serif" font-size="25" letter-spacing="5">OPERATORS · MODES · MAPS</text>
+  <text x="112" y="500" fill="#00e9a3" font-family="Arial,sans-serif" font-size="15" letter-spacing="4">ẢNH MINH HỌA TỰ TẠO</text>
+</svg>
