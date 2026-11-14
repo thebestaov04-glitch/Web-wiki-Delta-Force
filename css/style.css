@@ -753,7 +753,8 @@ RESPONSIVE — DESKTOP-FIRST
 
 .operator-card__media {
     width: 5rem;
-    height: 6.5rem;
+    height: auto;
+    aspect-ratio: 3 / 4;
     aspect-ratio: auto;
 }
 
@@ -977,7 +978,8 @@ RESPONSIVE — DESKTOP-FIRST
     }
     .operator-card__media {
         width: 3.75rem;
-        height: 5rem;
+        height: auto;
+        aspect-ratio: 3 / 4;
     }
     .operator-card__description {
         display: none;
