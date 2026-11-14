@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nhân vật — Delta Force Fan Wiki</title>
-  <meta name="description" content="Danh sách 18 operator Delta Force hiện có, chia theo lớp nhân vật.">
+  <meta name="description" content="Tra cứu hồ sơ, chức vụ và bộ kỹ năng của 18 nhân vật Delta Force bằng tiếng Việt.">
   <meta name="theme-color" content="#080a09">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <meta property="og:title" content="Nhân vật — Delta Force Fan Wiki">
-  <meta property="og:description" content="Danh sách 18 operator Delta Force hiện có, chia theo lớp nhân vật.">
+  <meta property="og:description" content="Tra cứu hồ sơ, chức vụ và bộ kỹ năng của 18 nhân vật Delta Force bằng tiếng Việt.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="vi_VN">
   <!-- TODO: dán URL đầy đủ tới assets/images/social/og-cover.svg sau khi có link GitHub Pages. -->
@@ -22,7 +22,6 @@
   <meta property="og:image:alt" content="Ảnh xem trước Delta Force Fan Wiki">
 </head>
 <body>
-  <!-- KHỐI DÙNG CHUNG – sửa đồng bộ ở cả 4 file -->
   <a class="skip-link" href="#main-content">Chuyển tới nội dung chính</a>
   <header class="site-header">
     <div class="site-header__inner">
@@ -44,26 +43,27 @@
       <div class="section-heading">
         <span class="section-heading__index" aria-hidden="true">// 02</span>
         <h1 class="section-heading__title">Nhân vật operator</h1>
-        <p class="section-heading__text">Lọc danh sách theo lớp. Có thể dùng phím Tab và phím mũi tên để chọn radio.</p>
+        <p class="section-heading__text">Chọn một nhân vật để xem chức vụ, hồ sơ và toàn bộ bộ kỹ năng. Danh sách có thể lọc theo vai trò.</p>
       </div>
 
       <fieldset class="operator-filter">
-        <legend class="operator-filter__legend">Lọc theo lớp</legend>
+        <legend class="operator-filter__legend">Lọc theo vai trò</legend>
         <div class="operator-filter__options">
           <input class="operator-filter__input" type="radio" id="operator-filter-all" name="operator-class" value="all" checked>
           <label class="operator-filter__label" for="operator-filter-all">Tất cả</label>
           <input class="operator-filter__input" type="radio" id="operator-filter-assault" name="operator-class" value="assault">
-          <label class="operator-filter__label" for="operator-filter-assault">Assault</label>
+          <label class="operator-filter__label" for="operator-filter-assault">Đột kích · Assault</label>
           <input class="operator-filter__input" type="radio" id="operator-filter-engineer" name="operator-class" value="engineer">
-          <label class="operator-filter__label" for="operator-filter-engineer">Engineer</label>
+          <label class="operator-filter__label" for="operator-filter-engineer">Công binh · Engineer</label>
           <input class="operator-filter__input" type="radio" id="operator-filter-recon" name="operator-class" value="recon">
-          <label class="operator-filter__label" for="operator-filter-recon">Recon</label>
+          <label class="operator-filter__label" for="operator-filter-recon">Trinh sát · Recon</label>
           <input class="operator-filter__input" type="radio" id="operator-filter-support" name="operator-class" value="support">
-          <label class="operator-filter__label" for="operator-filter-support">Support</label>
+          <label class="operator-filter__label" for="operator-filter-support">Hỗ trợ · Support</label>
         </div>
       </fieldset>
 
-      <div class="operator-grid">
+      <div class="operator-browser">
+      <div class="operator-grid" aria-label="Danh sách nhân vật">
         <article class="operator-card operator-card--assault">
           <figure class="operator-card__media">
             <img class="operator-card__image" src="assets/images/operators/d-wolf.webp" alt="Ảnh operator D-Wolf" width="459" height="565" loading="lazy">
@@ -245,11 +245,13 @@
           </div>
         </article>
       </div>
+      <section class="operator-detail" id="operator-detail" aria-live="polite" aria-atomic="true" aria-label="Thông tin nhân vật">
+        <p class="operator-detail__empty">Chọn một nhân vật trong danh sách để xem hồ sơ và kỹ năng.</p>
+      </section>
+      </div>
     </div>
-    <p class="page-meta">Nguồn: <a href="https://senseos.gg/guides/delta-force/operators-list/" target="_blank" rel="noopener noreferrer">Danh sách operator</a>, <a href="https://deltaforce.garena.com/en/news/announcement/GWPGVY" target="_blank" rel="noopener noreferrer">cập nhật S12 Aurora</a> · Cập nhật lần cuối: 12/11/2026.</p>
+    <p class="page-meta">Thông tin kỹ năng được Việt hóa từ <a href="https://liquipedia.net/deltaforce/Portal:Operators" target="_blank" rel="noopener noreferrer">Liquipedia Delta Force Wiki</a> và đối chiếu nguồn chính thức. Martelo là nhân vật mới của Mùa Aurora; xem thêm <a href="https://deltaforce.garena.com/en/news/announcement/STZAUY" target="_blank" rel="noopener noreferrer">thông báo mùa Aurora</a>. Tên kỹ năng được giữ bằng tiếng Anh để tiện tra cứu; hiệu ứng có thể thay đổi theo bản cập nhật.</p>
   </main>
-
-  <!-- KHỐI DÙNG CHUNG – sửa đồng bộ ở cả 4 file -->
   <footer class="site-footer">
     <div class="site-footer__inner">
       <p class="site-footer__disclaimer">Trang fan-made phi thương mại, không liên kết với TiMi Studio Group, Tencent hay Garena. Hình ảnh, tên và thương hiệu thuộc về chủ sở hữu.</p>
@@ -260,6 +262,7 @@
       <p class="site-footer__note">Thông tin có thể thay đổi theo mùa, hãy đối chiếu trang chính thức.</p>
     </div>
   </footer>
+  <script src="js/operators.js" defer></script>
 </body>
 </html>
 

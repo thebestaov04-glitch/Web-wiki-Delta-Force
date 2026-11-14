@@ -709,3 +709,297 @@ RESPONSIVE — DESKTOP-FIRST
   }
 }
 
+/* HỒ SƠ NHÂN VẬT: danh sách chọn bên trái, thông tin chi tiết bên phải. */
+.operator-browser {
+    display: grid;
+    grid-template-columns: minmax(16rem, 0.38fr) minmax(0, 1fr);
+    align-items: start;
+    gap: var(--space-5);
+}
+
+.operator-grid {
+    grid-template-columns: minmax(0, 1fr);
+    align-content: start;
+    max-height: min(76vh, 58rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 0.125rem;
+    position: sticky;
+    top: calc(var(--nav-height) + var(--space-4));
+}
+
+.operator-card {
+    display: grid;
+    grid-template-columns: 5rem minmax(0, 1fr);
+    align-items: center;
+    gap: var(--space-2);
+    cursor: pointer;
+    color: var(--text);
+    text-align: left;
+}
+
+.operator-card[hidden] {
+    display: none;
+}
+
+.operator-card[aria-pressed="true"] {
+    background: var(--accent);
+    box-shadow: 0 0 0 1px var(--accent), var(--shadow-card);
+}
+
+.operator-card:focus-visible {
+    outline-offset: 2px;
+}
+
+.operator-card__media {
+    width: 5rem;
+    height: 5.5rem;
+    aspect-ratio: auto;
+}
+
+.operator-card__content {
+    min-width: 0;
+    padding: var(--space-2);
+}
+
+.operator-card__name {
+    margin-bottom: 0.1rem;
+    font-size: 1.2rem;
+}
+
+.operator-card__role {
+    margin-bottom: 0.15rem;
+    font-size: var(--font-size-xs);
+}
+
+.operator-card__description {
+    display: -webkit-box;
+    overflow: hidden;
+    color: var(--text-muted);
+    font-size: var(--font-size-xs);
+    line-height: 1.35;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.operator-detail {
+    min-width: 0;
+    max-height: min(82vh, 68rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: var(--space-5);
+    position: sticky;
+    top: calc(var(--nav-height) + var(--space-4));
+    border: 1px solid var(--line);
+    background: linear-gradient(145deg, var(--panel-raised), var(--bg) 72%);
+    box-shadow: var(--shadow-card);
+}
+
+.operator-detail__back {
+    display: none;
+    min-height: 2.75rem;
+    margin-bottom: var(--space-4);
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--line-strong);
+    background: var(--panel);
+    color: var(--text);
+    cursor: pointer;
+}
+
+.operator-detail__empty {
+    padding-block: var(--space-8);
+    color: var(--text-muted);
+    text-align: center;
+}
+
+.operator-detail__hero {
+    display: grid;
+    grid-template-columns: minmax(8rem, 0.32fr) minmax(0, 1fr);
+    align-items: center;
+    gap: var(--space-5);
+    padding-bottom: var(--space-5);
+    border-bottom: 1px solid var(--line-strong);
+}
+
+.operator-detail__portrait {
+    min-height: 14rem;
+    display: grid;
+    place-items: end center;
+    overflow: hidden;
+    background: radial-gradient(ellipse at 50% 38%, var(--line), var(--bg) 75%);
+}
+
+.operator-detail__portrait img {
+    width: 100%;
+    height: 16rem;
+    object-fit: contain;
+    object-position: center bottom;
+}
+
+.operator-detail__eyebrow {
+    margin-bottom: var(--space-2);
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: var(--font-size-xs);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.operator-detail__title {
+    margin-bottom: 0.1rem;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1;
+}
+
+.operator-detail__real-name {
+    margin-bottom: var(--space-3);
+    color: var(--text-muted);
+}
+
+.operator-detail__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-bottom: var(--space-3);
+}
+
+.operator-detail__tag {
+    padding: 0.25rem 0.6rem;
+    border: 1px solid var(--line-strong);
+    background: var(--overlay-soft);
+    color: var(--text);
+    font-size: var(--font-size-xs);
+}
+
+.operator-detail__summary,
+.operator-role__text,
+.operator-ability__description,
+.operator-playstyle {
+    color: var(--text-muted);
+}
+
+.operator-role {
+    margin-block: var(--space-4);
+    padding: var(--space-4);
+    border-left: 3px solid var(--accent);
+    background: var(--accent-wash);
+}
+
+.operator-role__title,
+.operator-skills__title {
+    margin-bottom: var(--space-2);
+    font-size: 1.35rem;
+}
+
+.operator-playstyle {
+    margin-top: var(--space-2);
+    font-size: var(--font-size-small);
+}
+
+.operator-ability-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-3);
+}
+
+.operator-ability {
+    min-width: 0;
+    padding: var(--space-4);
+    border: 1px solid var(--line);
+    background: rgba(4, 7, 6, 0.52);
+}
+
+.operator-ability__type {
+    display: block;
+    margin-bottom: var(--space-2);
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: var(--font-size-xs);
+    letter-spacing: 0.035em;
+}
+
+.operator-ability__name {
+    margin-bottom: var(--space-2);
+    font-size: 1.15rem;
+    line-height: 1.25;
+}
+
+.operator-ability__description {
+    font-size: var(--font-size-small);
+    line-height: 1.55;
+}
+
+.operator-detail__sources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+    padding-top: var(--space-3);
+    border-top: 1px solid var(--line);
+    color: var(--text-muted);
+    font-size: var(--font-size-xs);
+}
+
+.operator-detail__sources a {
+    color: var(--accent);
+}
+
+@media (max-width: 1023px) {
+    .operator-browser {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .operator-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        max-height: none;
+        overflow: visible;
+        position: static;
+    }
+    .operator-detail {
+        max-height: none;
+        overflow: visible;
+        position: static;
+        scroll-margin-top: var(--space-4);
+    }
+    .operator-detail__back {
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .operator-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .operator-card {
+        grid-template-columns: 3.75rem minmax(0, 1fr);
+    }
+    .operator-card__media {
+        width: 3.75rem;
+        height: 4.75rem;
+    }
+    .operator-card__description {
+        display: none;
+    }
+    .operator-detail__hero {
+        grid-template-columns: minmax(5.5rem, 0.34fr) minmax(0, 1fr);
+        gap: var(--space-3);
+    }
+    .operator-detail__portrait,
+    .operator-detail__portrait img {
+        min-height: 10rem;
+        height: 11rem;
+    }
+    .operator-ability-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 479px) {
+    .operator-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .operator-detail {
+        padding: var(--space-4);
+    }
+}
+
