@@ -1,7 +1,4 @@
 # Delta Force Fan Wiki
-
-README này giới thiệu dự án, cách chạy website và các tính năng chính, trong đó có bản cập nhật hồ sơ nhân vật 1.1. Dự án là mini wiki tiếng Việt do cộng đồng thực hiện, mang tính fan-made và phi thương mại.
-
 ## 1. Sản phẩm này là gì?
 
 Đây là website tĩnh giới thiệu Delta Force bằng tiếng Việt. Người đọc có thể xem tổng quan các chế độ chơi, operator và bản đồ. Dự án phù hợp để tra cứu nhanh và làm nền tảng cho việc bổ sung nội dung wiki; hiện chưa có máy chủ, cơ sở dữ liệu hay chức năng tài khoản.
