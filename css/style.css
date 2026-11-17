@@ -246,13 +246,13 @@ COMPONENTS
 }
 
 /* Lớp nền ngoài và mặt trong tạo viền mảnh khi clip-path cắt góc thẻ. */
-.mode-card, .operator-card, .map-card, .mode-detail {
+.mode-card, .operator-card, .map-card {
     position: relative; isolation: isolate;
     padding: var(--card-inset); overflow: visible;
     clip-path: polygon( var(--card-cut) 0, 100% 0, 100% calc(100% - var(--card-cut)), calc(100% - var(--card-cut)) 100%, 0 100%, 0 var(--card-cut) ); background: var(--line);
 }
 
-.mode-card::before, .operator-card::before, .map-card::before, .mode-detail::before {
+.mode-card::before, .operator-card::before, .map-card::before {
     position: absolute; z-index: -1;
     inset: var(--card-inset); clip-path: polygon( var(--card-cut) 0, 100% 0, 100% calc(100% - var(--card-cut)), calc(100% - var(--card-cut)) 100%, 0 100%, 0 var(--card-cut) );
     background: var(--panel); content: "";
@@ -286,25 +286,133 @@ COMPONENTS
     content: "↗"; font-size: 1.1em;
 }
 
-/* TODO cho bạn tự làm 1: thử thay mức nâng thẻ khi rê chuột; viền và bóng hiện tại là phương án dự phòng. */
-.mode-detail {
-    padding: clamp(var(--space-5), 4vw, var(--space-8)); scroll-margin-top: calc(var(--nav-height) + var(--space-4));
+.mode-feature-list {
+    display: grid;
+    gap: var(--space-5);
 }
 
-.mode-detail__header {
-    margin-bottom: var(--space-4); display: flex;
-    align-items: baseline; gap: var(--space-4);
+.mode-feature {
+    display: grid;
+    grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+    align-items: center;
+    overflow: hidden;
+    border: var(--border-width) solid var(--line);
+    background: var(--panel-raised);
+    scroll-margin-top: calc(var(--nav-height) + var(--space-4));
 }
-.mode-detail__index {
-    color: var(--accent); font-family: var(--font-mono);
-    font-size: var(--font-size-small);
+
+.mode-feature--reverse .mode-feature__media {
+    grid-column: 2;
+    grid-row: 1;
 }
-.mode-detail__title {
+
+.mode-feature--reverse .mode-feature__content {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.mode-feature:target {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px var(--accent), var(--shadow-card);
+}
+
+.mode-feature__media {
+    position: relative;
+    width: 100%;
+    align-self: center;
+    aspect-ratio: 16 / 9;
+    margin: 0;
+    overflow: hidden;
+    background: var(--bg);
+}
+
+.mode-feature__media::after {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(4, 7, 6, 0.02) 45%, rgba(4, 7, 6, 0.82) 100%);
+    content: "";
+    pointer-events: none;
+}
+
+.mode-feature__image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+}
+
+.mode-feature__caption {
+    position: absolute;
+    z-index: 1;
+    right: var(--space-5);
+    bottom: var(--space-4);
+    left: var(--space-5);
     color: var(--text);
+    font-family: var(--font-mono);
+    font-size: var(--font-size-xs);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
-.mode-detail__text {
-    color: var(--text-muted); font-size: var(--font-size-lead);
+.mode-feature__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(var(--space-5), 4vw, var(--space-8));
+}
+
+.mode-feature__eyebrow {
+    margin-bottom: var(--space-3);
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: var(--font-size-xs);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.mode-feature__eyebrow span {
+    margin-right: var(--space-2);
+    color: var(--accent-warm);
+}
+
+.mode-feature__title {
+    margin-bottom: var(--space-3);
+    font-size: clamp(2.5rem, 4vw, 4rem);
+}
+
+.mode-feature__text {
+    color: var(--text-muted);
+    font-size: var(--font-size-lead);
+}
+
+.mode-feature__facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4);
+    margin: var(--space-5) 0 0;
+    padding-top: var(--space-4);
+    border-top: var(--border-width) solid var(--line);
+}
+
+.mode-feature__facts div {
+    min-width: 0;
+}
+
+.mode-feature__facts dt {
+    margin-bottom: var(--space-1);
+    color: var(--accent-warm);
+    font-family: var(--font-mono);
+    font-size: var(--font-size-xs);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.mode-feature__facts dd {
+    margin: 0;
+    color: var(--text);
+    font-size: var(--font-size-small);
+    font-weight: 600;
 }
 .operator-filter {
     display: none; margin-bottom: var(--space-6);
@@ -541,17 +649,6 @@ CÁC TRANG NỘI DUNG
 .modes-page > .section-heading, .operator-page > .section-heading, .maps-page > .section-heading {
     margin-bottom: var(--space-7);
 }
-.mode-detail + .mode-detail {
-    margin-top: var(--space-5);
-}
-
-.mode-detail:target {
-    background: var(--accent-wash);
-}
-.mode-detail:target::before {
-    background: var(--panel-raised);
-}
-
 .operator-page {
     padding-bottom: var(--space-8);
 }
@@ -583,9 +680,6 @@ FOCUS, TƯƠNG TÁC VÀ CHUYỂN ĐỘNG
     outline-offset: -4px;
 }
 
-.mode-detail:target {
-    scroll-margin-top: calc(var(--nav-height) + var(--space-4));
-}
 /* View Transitions là phần bổ sung; trình duyệt không hỗ trợ sẽ bỏ qua. */
 @media (prefers-reduced-motion: no-preference) {
   html {
@@ -695,7 +789,7 @@ RESPONSIVE — DESKTOP-FIRST
 }
 
 @media (max-width: 639px) {
-  .maps-page {
+  .maps-page, .modes-page {
       padding: var(--space-4);
   }
   .map-grid {
@@ -706,6 +800,37 @@ RESPONSIVE — DESKTOP-FIRST
   }
   .map-card__title {
       font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .mode-feature, .mode-feature--reverse {
+      grid-template-columns: minmax(0, 1fr);
+  }
+  .mode-feature__media {
+      align-self: stretch;
+      aspect-ratio: 16 / 9;
+  }
+  .mode-feature--reverse .mode-feature__media, .mode-feature--reverse .mode-feature__content {
+      grid-column: 1;
+      grid-row: auto;
+  }
+  .mode-feature__content {
+      padding: var(--space-5);
+  }
+}
+
+@media (max-width: 479px) {
+  .mode-feature__content {
+      padding: var(--space-4);
+  }
+  .mode-feature__facts {
+      grid-template-columns: minmax(0, 1fr);
+      gap: var(--space-3);
+  }
+  .mode-feature__caption {
+      right: var(--space-4);
+      left: var(--space-4);
   }
 }
 

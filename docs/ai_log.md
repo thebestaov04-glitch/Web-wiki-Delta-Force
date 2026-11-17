@@ -14,6 +14,7 @@
 - Tra cứu các trang chính thức của Garena/Delta Force để gắn nguồn cho nội dung phát hành và mô tả chế độ chơi.
 - Soạn tài liệu `docs/evidence-index.md` và nhật ký này.
 - Cập nhật mô tả Trang chủ và Chế độ chơi, bổ sung liên kết nguồn và ngày đối chiếu 17/11/2026 cho hai trang đó.
+- Tạo bố cục ảnh minh họa tĩnh cho ba chế độ bằng ảnh đã có trong dự án; HTML/CSS được cập nhật, không thêm JavaScript.
 - Gỡ các giá trị Open Graph `[Cần điền]` khỏi HTML. Chưa thể tạo URL tuyệt đối cho ảnh chia sẻ vì dự án chưa khai báo địa chỉ website công khai; ảnh gốc vẫn nằm ở `assets/images/social/og-cover.svg`.
 - Cập nhật README và changelog để phản ánh tài liệu mới và tình trạng URL triển khai.
 

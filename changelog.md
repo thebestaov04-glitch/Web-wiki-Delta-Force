@@ -1,5 +1,12 @@
 # Delta Force Fan Wiki — Nhật ký thay đổi
 
+## Bố cục hình ảnh cho trang Chế độ chơi — 17/11/2026
+
+- Thay ba khối văn bản đơn giản bằng các mục giới thiệu ảnh và nội dung cho Warfare, Operations và Black Hawk Down.
+- Dùng lại ảnh Trench Lines, Zero Dam và Mogadishu đã có trong thư mục ảnh của dự án.
+- Thêm thông tin ngắn về mục tiêu và điểm nổi bật; xếp ảnh cạnh nội dung trên màn hình rộng và đặt ảnh phía trên nội dung trên màn hình nhỏ.
+- Chỉ chỉnh HTML/CSS; không thêm JavaScript.
+
 ## Bổ sung chỉ mục nguồn và nhật ký AI — 17/11/2026
 
 - Thêm `docs/evidence-index.md` để nối các thông tin trên website với nguồn chính thức và tệp chứa nội dung.

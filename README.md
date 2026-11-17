@@ -13,7 +13,7 @@ Hiện chưa có URL demo công khai được khai báo trong dự án. Có th�
 ## 3. Tính năng hiện có
 
 - Trang chủ giới thiệu wiki và dẫn tới các phần nội dung.
-- Trang chế độ chơi tóm tắt Warfare, Operations và Black Hawk Down.
+- Trang chế độ chơi giới thiệu Warfare, Operations và Black Hawk Down qua các mục ảnh minh họa thích ứng với màn hình.
 - Trang operator có danh sách 18 nhân vật, bộ lọc theo chức vụ và hồ sơ tương tác cho từng nhân vật. Chọn một operator để xem tên thật, lớp nhân vật, mùa ra mắt, gợi ý lối chơi và bộ kỹ năng gồm trang bị chiến thuật, hai thiết bị và đặc tính.
 - Chức vụ hiển thị bằng tiếng Việt kèm tên gốc: Đột kích (Assault), Công binh (Engineer), Trinh sát (Recon) và Hỗ trợ (Support). Tên kỹ năng giữ nguyên tiếng Anh để tiện tra cứu; phần mô tả được Việt hóa.
 - Ảnh nhân vật ở danh sách và hồ sơ chi tiết được hiển thị theo khung chân dung 3:4. Ảnh nguồn nằm ngang được cắt quanh nhân vật.
