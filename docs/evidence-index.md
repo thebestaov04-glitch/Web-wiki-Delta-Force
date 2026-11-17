@@ -19,6 +19,7 @@ Tài liệu này nối các thông tin chính trên website với vị trí nộ
 | Hồ sơ, vai trò và kỹ năng operator | `operators.html`; dữ liệu và liên kết nguồn theo hồ sơ tại `js/operators.js` | [Liquipedia — Delta Force Operators](https://liquipedia.net/deltaforce/Portal:Operators); nguồn chính thức và nguồn bổ sung được lưu trong từng hồ sơ ở `js/operators.js` | Liquipedia là nguồn cộng đồng thứ cấp. Hồ sơ Martelo có thêm thông báo mùa Aurora và bản cập nhật chính thức được liên kết trong dữ liệu. Đối chiếu từng hồ sơ trước khi dùng cho quyết định trong game. |
 | Số lượng operator, bộ lọc vai trò và tương tác hồ sơ | `operators.html`; `js/operators.js` | Mã nguồn giao diện và dữ liệu trong dự án | Đây là thông tin về cách website hoạt động, không phải dữ kiện game cần nguồn ngoài. |
 | Khai báo fan-made và phi thương mại | Chân trang của `index.html`, `modes.html`, `operators.html`, `maps.html` | Nội dung chân trang trong chính các tệp HTML | Hình ảnh, logo và thương hiệu vẫn thuộc chủ sở hữu tương ứng. Kho mã hiện không lưu hồ sơ cấp phép đầy đủ cho từng ảnh. |
+| Ảnh nền toàn website | `assets/images/backgrounds/site-background.png`; lớp nền cố định được khai báo trong `css/style.css` | Ảnh người dùng cung cấp trong hội thoại | Ảnh dùng làm nền trang trí chung cho các trang; lớp phủ tối được áp dụng để bảo toàn khả năng đọc nội dung. |
 
 ## Nguồn chính được dùng trên website
 

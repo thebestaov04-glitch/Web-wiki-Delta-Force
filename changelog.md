@@ -1,5 +1,12 @@
 # Delta Force Fan Wiki — Nhật ký thay đổi
 
+## Ảnh nền cố định toàn website — 17/11/2026
+
+- Thêm ảnh người dùng gửi tại `assets/images/backgrounds/site-background.png` và dùng làm nền phủ kín màn hình.
+- Nền được giữ cố định khi cuộn và dùng chung trên các trang; lớp phủ tối cùng các khung nội dung giúp chữ dễ đọc.
+- Cho phần mở đầu Trang chủ dùng chung nền toàn trang thay vì hình nền riêng.
+- Chỉ cập nhật ảnh, HTML và CSS; không thêm JavaScript.
+
 ## Bố cục hình ảnh cho trang Chế độ chơi — 17/11/2026
 
 - Thay ba khối văn bản đơn giản bằng các mục giới thiệu ảnh và nội dung cho Warfare, Operations và Black Hawk Down.
