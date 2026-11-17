@@ -8,7 +8,7 @@ README này giới thiệu dự án, cách chạy website và các tính năng c
 
 ## 2. Demo
 
-Hiện chưa có URL demo công khai được khai báo trong dự án. Có thể chạy website trên máy theo hướng dẫn ở mục 4. Các trang có ảnh chia sẻ mạng xã hội, nhưng thẻ `og:image` vẫn là giá trị chờ cập nhật URL sau khi website được triển khai.
+Hiện chưa có URL demo công khai được khai báo trong dự án. Có thể chạy website trên máy theo hướng dẫn ở mục 4. Ảnh xem trước mạng xã hội có trong dự án; thẻ `og:image` sẽ cần URL tuyệt đối sau khi website được triển khai.
 
 ## 3. Tính năng hiện có
 
@@ -51,6 +51,9 @@ Sau đó mở <http://localhost:8000>. Dừng máy chủ bằng `Ctrl+C` trong c
 │       ├── maps/              # Hình minh họa và ảnh bản đồ
 │       ├── operators/         # Ảnh operator
 │       └── social/            # Ảnh chia sẻ mạng xã hội
+├── docs/
+│   ├── evidence-index.md       # Danh mục bằng chứng và nguồn tham khảo
+│   └── ai_log.md              # Nhật ký hỗ trợ của AI
 ├── README.md
 └── changelog.md               # Lịch sử thay đổi
 ```
@@ -68,8 +71,8 @@ Mỗi hồ sơ có liên kết nguồn tham khảo riêng. Liquipedia hiện có
 ## 7. Giới hạn / Chưa kiểm tra
 
 - Chưa có bản demo triển khai công khai, tìm kiếm, tài khoản hay dữ liệu lấy trực tiếp từ máy chủ.
-- Nội dung game có thể thay đổi theo mùa. Trang Nhân vật liên kết nguồn tại từng hồ sơ; trang chủ và trang chế độ chơi vẫn cần bổ sung nguồn cho nội dung tương ứng.
-- URL ảnh Open Graph đang là placeholder cho tới khi có URL triển khai công khai.
+- Nội dung game có thể thay đổi theo mùa. Các trang liên kết tới nguồn tham khảo; xem [chỉ mục bằng chứng](docs/evidence-index.md) để tra cứu theo nội dung.
+- Chưa khai báo URL triển khai công khai; ảnh Open Graph cần URL tuyệt đối sau khi có tên miền hoặc địa chỉ hosting.
 - Font Google Fonts cần kết nối mạng; khi ngoại tuyến, trình duyệt sẽ dùng font dự phòng.
 - Chưa kiểm tra hiển thị thực tế trên các trình duyệt, thiết bị hoặc công cụ hỗ trợ truy cập.
 
@@ -80,8 +83,10 @@ Mỗi hồ sơ có liên kết nguồn tham khảo riêng. Liquipedia hiện có
 - [Delta Force — trang chính thức](https://playdeltaforce.com/) và [Delta Force Garena Việt Nam](https://deltaforce.garena.vn/).
 - Các nguồn về bản đồ được dẫn trực tiếp ở cuối [trang Bản đồ](maps.html), gồm HQ Tool Station và các thông báo mùa từ Delta Force/Garena. Trang này ghi ngày đối chiếu 12/11/2026.
 - Nguồn operator được dẫn tại từng hồ sơ trong [trang Nhân vật](operators.html), gồm các trang operator trên Liquipedia. Với Martelo mới ra mắt, trang dùng thêm [thông báo mùa Aurora](https://deltaforce.garena.com/en/news/announcement/STZAUY), [bản cập nhật ngày 12/11](https://deltaforce.garena.com/en/news/all/XZSNPX) và các hướng dẫn kỹ năng hiện có.
-- Trang chủ và trang chế độ chơi hiện chưa hoàn tất ghi nguồn; cần bổ sung khi cập nhật hoặc xác minh nội dung ở các trang đó.
+- Trang chủ và trang chế độ chơi đã dẫn nguồn chính thức cho phần giới thiệu và mô tả chế độ; xem [chỉ mục bằng chứng](docs/evidence-index.md) để tra cứu theo từng nội dung.
 
 **Khai báo AI:** README này được biên soạn với sự hỗ trợ của AI theo yêu cầu của người dùng. Kho mã hiện không ghi nhận nguồn gốc AI hay con người của các ảnh và nội dung game đã có, nên README không khẳng định chúng được tạo bằng AI.
 
 Xem [changelog.md](changelog.md) để biết các mốc thay đổi đã được lưu trong lịch sử Git.
+
+Danh mục nguồn theo từng nội dung nằm trong [docs/evidence-index.md](docs/evidence-index.md); ghi chú về phần việc AI hỗ trợ nằm trong [docs/ai_log.md](docs/ai_log.md).

@@ -1,6 +1,14 @@
 # Delta Force Fan Wiki — Nhật ký thay đổi
 
-Tài liệu này tổng hợp các mốc trong lịch sử Git hiện có cùng các cập nhật tài liệu và giao diện đến ngày 14/11/2026. Lịch sử Git của dự án hiện có hai commit mã nguồn ban đầu; các bước phát triển trung gian chưa được lưu lại đầy đủ.
+## Bổ sung chỉ mục nguồn và nhật ký AI — 17/11/2026
+
+- Thêm `docs/evidence-index.md` để nối các thông tin trên website với nguồn chính thức và tệp chứa nội dung.
+- Thêm `docs/ai_log.md` ghi phạm vi AI hỗ trợ và cách xử lý hình đính kèm như mẫu cấu trúc thư mục.
+- Thay nội dung placeholder về nguồn và ngày cập nhật ở Trang chủ, Chế độ chơi bằng liên kết tham khảo và ngày đối chiếu.
+- Cập nhật mô tả chế độ chơi để khớp với hướng dẫn tiếng Việt hiện hành của Garena.
+- Gỡ các giá trị Open Graph `[Cần điền]`; dự án chưa khai báo URL công khai để tạo ảnh URL tuyệt đối.
+
+Tài liệu này tổng hợp các mốc trong lịch sử Git hiện có cùng các cập nhật tài liệu và giao diện đến ngày 17/11/2026. Lịch sử Git của dự án hiện có hai commit mã nguồn ban đầu; các bước phát triển trung gian chưa được lưu lại đầy đủ.
 
 ## Update thay đổi nhân vật 1.1 — 14/11/2026
 
