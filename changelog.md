@@ -1,5 +1,9 @@
 # Delta Force Fan Wiki — Nhật ký thay đổi
 
+## Dọn ảnh không được sử dụng — 22/11/2026
+
+- Xóa 11 ảnh SVG cũ không còn được website sử dụng: `assets/images/brand/fan-wiki-mark.svg`, `assets/images/hero/hero.svg` và các hình bản đồ trong `assets/images/maps/`.
+
 ## Nhúng JavaScript của trang Nhân vật vào HTML — 22/11/2026
 
 - Chuyển dữ liệu và tương tác hồ sơ operator từ `js/operators.js` vào thẻ `<script>` trong `operators.html`.
