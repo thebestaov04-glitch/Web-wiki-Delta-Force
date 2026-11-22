@@ -1,5 +1,11 @@
 # Delta Force Fan Wiki — Nhật ký thay đổi
 
+## Nhúng JavaScript của trang Nhân vật vào HTML — 22/11/2026
+
+- Chuyển dữ liệu và tương tác hồ sơ operator từ `js/operators.js` vào thẻ `<script>` trong `operators.html`.
+- Xóa tệp JavaScript riêng; dự án không còn thư mục `js/`.
+- Cập nhật README để phản ánh cấu trúc thư mục và vị trí mã JavaScript hiện tại.
+
 ## Ảnh nền cố định toàn website — 17/11/2026
 
 - Thêm ảnh người dùng gửi tại `assets/images/backgrounds/site-background.png` và dùng làm nền phủ kín màn hình.
@@ -62,5 +68,5 @@ Tài liệu này tổng hợp các mốc trong lịch sử Git hiện có cùng 
 
 ## Trạng thái hiện tại
 
-Tại mốc cập nhật 14/11/2026, dự án là website tĩnh gồm bốn trang HTML, một stylesheet chung và JavaScript phía trình duyệt cho hồ sơ operator tương tác. Không có cấu hình build hoặc phụ thuộc thư viện trong cây dự án. Các trang vẫn có chỗ chờ URL ảnh Open Graph công khai; cập nhật giá trị này sau khi có địa chỉ triển khai chính thức.
+Tại mốc cập nhật 22/11/2026, dự án là website tĩnh gồm bốn trang HTML, một stylesheet chung và JavaScript nhúng trong `operators.html` cho hồ sơ operator tương tác. Không có cấu hình build hoặc phụ thuộc thư viện trong cây dự án. Các trang vẫn có chỗ chờ URL ảnh Open Graph công khai; cập nhật giá trị này sau khi có địa chỉ triển khai chính thức.
 

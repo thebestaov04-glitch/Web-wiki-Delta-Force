@@ -40,8 +40,6 @@ Sau đó mở <http://localhost:8000>. Dừng máy chủ bằng `Ctrl+C` trong c
 ├── maps.html                  # Bản đồ và nguồn tham khảo
 ├── css/
 │   └── style.css              # Giao diện dùng chung
-├── js/
-│   └── operators.js           # Dữ liệu và tương tác hồ sơ operator
 ├── assets/
 │   └── images/
 │       ├── brand/             # Logo và nhận diện
@@ -57,7 +55,7 @@ Sau đó mở <http://localhost:8000>. Dừng máy chủ bằng `Ctrl+C` trong c
 └── changelog.md               # Lịch sử thay đổi
 ```
 
-Nội dung từng trang nằm trong file HTML tương ứng; kiểu dáng dùng chung nằm trong `css/style.css`. Dữ liệu và tương tác hồ sơ operator nằm trong `js/operators.js`. Thanh điều hướng và phần chân trang được viết trực tiếp trong từng trang nên cần cập nhật đồng bộ khi sửa.
+Nội dung từng trang nằm trong file HTML tương ứng; kiểu dáng dùng chung nằm trong `css/style.css`. Dữ liệu và tương tác hồ sơ operator được viết trong thẻ `<script>` của `operators.html`. Thanh điều hướng và phần chân trang được viết trực tiếp trong từng trang nên cần cập nhật đồng bộ khi sửa.
 
 ## 6. Bản cập nhật hồ sơ nhân vật 1.1
 
