@@ -3,9 +3,9 @@
 > Mini wiki tiếng Việt do cộng đồng thực hiện, giúp người chơi tra cứu nhanh các chế độ chơi, operator và bản đồ trong Delta Force.
 
 > **Mã nguồn trên GitHub:** [thebestaov04-glitch/Web-wiki-Delta-Force](https://github.com/thebestaov04-glitch/Web-wiki-Delta-Force)<br>
-> **Bản demo:** Dự án hiện chưa khai báo website đã triển khai. Có thể mở trang trực tiếp hoặc chạy bản sao trên máy theo hướng dẫn bên dưới.
+> **Bản demo:** Dự án hiện đã có khai báo website đã triển khai. Có thể mở trang trực tiếp hoặc chạy bản sao trên máy theo hướng dẫn bên dưới.[https://thebestaov04-glitch.github.io/Web-wiki-Delta-Force/]
 
-Đây là website tĩnh dùng HTML, CSS và JavaScript thuần. Không cần cài thư viện, cơ sở dữ liệu hay bước biên dịch để xem hoặc chỉnh sửa nội dung.
+Đây là website tĩnh dùng HTML, CSS thêm 1 chút Javascript. Không cần cài thư viện, cơ sở dữ liệu hay bước biên dịch để xem hoặc chỉnh sửa nội dung.
 
 ## Delta Force trong wiki này
 
